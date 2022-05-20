@@ -1,0 +1,52 @@
+{
+  "Next Page": {
+    "prefix": "np",
+    "body": [
+      "import Head from 'next/head';",
+      "",
+      "interface $1Props {",
+      "\t$2",
+      "};",
+      "",
+      "export function ${TM_FILENAME_BASE/^(.*)\\..*/$1/}() {",
+      "  return (",
+      "    <>",
+      "      <Head>",
+      "        <title>${TM_FILENAME_BASE/^(.*)\\..*/$1/}</title>",
+      "      </Head>",
+      "      <main>",
+      "        <h1>Hello</h1>",
+      "      </main>",
+      "    </>",
+      "  );",
+      "};"
+    ],
+    "description": "Create a functional Next page",
+  },
+  "Get Static Props": {
+    "prefix": "gsp",
+    "body": [
+      "export const getStaticProps: GetStaticProps = async ($1) => {",
+      "  const data = {$2};",
+      "",
+      "  return {",
+      "    props: { data },",
+      "  };",
+      "};",
+    ],
+    "description": "Create getStaticProps function"
+  },
+  "Get Server Side Props": {
+    "prefix": "gssp",
+    "body": [
+      "export const getServerSideProps: GetServerSideProps = async ({$1}) => {",
+      "  const data = {$2};",
+      "",
+      "  return {",
+      "    props: { data },",
+      "  };",
+      "};"
+    ],
+    "description": "getServerSideProps"
+  }
+}

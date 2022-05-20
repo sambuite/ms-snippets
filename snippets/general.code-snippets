@@ -1,0 +1,65 @@
+{
+  "prettier": {
+    "prefix": "prettier",
+    "body": [
+      "{",
+      "  singleQuote: true,",
+      "  trailingComma: all",
+      "}"
+    ],
+    "description": "Create a simple prettier config"
+  },
+  "Arrow Function": {
+    "prefix": "af",
+    "body": [
+      "const $1 = ($2) => {$3};"
+    ],
+    "description": "Create an Arrow Function"
+  },
+  "Class file name": {
+    "prefix": "cfile",
+    "body": [
+      "export class ${TM_FILENAME_BASE/^(.*)\\..*/$1/} {",
+      "  constructor() {}",
+      "}"
+    ],
+    "description": "Create a class with file name"
+  },
+  "Class dir name": {
+    "prefix": "cdir",
+    "body": [
+      "export class ${TM_DIRECTORY/^.*(\\/|\\\\)([^(\\/|\\\\)]+)$/$2/} {",
+      "  constructor() {}",
+      "}"
+    ],
+    "description": "Create a class with dir name"
+  },
+  "Interface file name": {
+    "prefix": "ifile",
+    "body": [
+      "export interface ${TM_FILENAME_BASE/^(.*)\\..*/$1/} {",
+      "\t$1",
+      "}",
+    ],
+    "description": "Create a class with file name"
+  },
+  "Console": {
+    "prefix": "co",
+    "body": [
+      "console.log($1);"
+    ],
+    "description": "Create a console.log"
+  },
+  "File Name": {
+    "prefix": "nfile",
+    "body": [
+      "${TM_FILENAME_BASE/^(.*)\\..*/$1/}"
+    ]
+  },
+  "Dir Name": {
+    "prefix": "ndir",
+    "body": [
+      "${TM_DIRECTORY/^.*(\\/|\\\\)([^(\\/|\\\\)]+)$/$2/}",
+    ]
+  },
+}

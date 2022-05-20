@@ -1,0 +1,49 @@
+{
+  "styles": {
+    "prefix": "styled",
+    "body": [
+      "import styled, { css } from 'styled-components';",
+      "",
+      "export const ${1:Container} = styled.${2:div}`",
+      "  ${3}",
+      "`;"
+    ],
+    "description": "Create ReactJS Styled Components file"
+  },
+  "styles-rn": {
+    "prefix": "styled-rn",
+    "body": [
+      "import styled from 'styled-components/native';",
+      "",
+      "export const ${1:Container} = styled.${2:View}`",
+      "  ${3}",
+      "`;",
+      ""
+    ],
+    "description": "Create React Native Styled Components file"
+  },
+  "styles-theme": {
+    "prefix": "styled-theme",
+    "body": [
+      "import styled, { css } from 'styled-components';",
+      "",
+      "export const ${1:Container} = styled.${2:div}(",
+      "  ({ theme }) => css`",
+      "  ${3}",
+      "`);"
+    ],
+    "description": "Create ReactJS Styled Components file"
+  },
+  "styles-theme-rn": {
+    "prefix": "styled-theme-rn",
+    "body": [
+      "import styled, { css } from 'styled-components/native';",
+      "",
+      "export const ${1:Container} = styled.${2:View}(({ theme }) => css`",
+      "  ${3}",
+      "`);",
+      ""
+    ],
+    "description": "Create React Native Styled Components file"
+  }
+}

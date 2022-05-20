@@ -1,0 +1,60 @@
+{
+    "name": "ms-snippets",
+    "displayName": "MS Snippets",
+    "description": "Snippets that i use everyday",
+    "version": "0.0.1",
+    "publisher": "MuriloSambuite",
+    "author": {
+        "name": "Murilo Sambuite",
+        "email": "murilosambuite@gmail.com",
+        "url": "https://murilosambuite.com"
+    },
+    "icon": "logo.png",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/sambuite/ms-snippets.git"
+    },
+    "keywords": [
+        "snippet",
+        "snippets",
+        "fast code",
+        "triggers",
+        "trigger",
+        "word trigger",
+        "keywords"
+    ],
+    "engines": {
+        "vscode": "^1.67.0"
+    },
+    "categories": [
+        "Snippets"
+    ],
+    "contributes": {
+        "snippets": [
+            {
+                "language": "",
+                "path": "./snippets/general.code-snippets"
+            },
+            {
+                "language": "typescriptreact",
+                "path": "./snippets/next.code-snippets"
+            },
+            {
+                "language": "typescriptreact",
+                "path": "./snippets/react.code-snippets"
+            },
+            {
+                "language": "typescript",
+                "path": "./snippets/react.code-snippets"
+            },
+            {
+                "language": "typescript",
+                "path": "./snippets/next.code-snippets"
+            },
+            {
+                "language": "typescript",
+                "path": "./snippets/styled.code-snippets"
+            }
+        ]
+    }
+}

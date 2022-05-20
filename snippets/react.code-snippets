@@ -1,0 +1,72 @@
+{
+  "React Functional Component File Name": {
+    "prefix": "rfc-file",
+    "body": [
+      "interface $1Props {",
+      "\t$2",
+      "}",
+      "",
+      "export function ${TM_FILENAME_BASE/^(.*)\\..*/$1/}() {",
+      "  return (",
+      "    $4<div />",
+      "  );",
+      "};"
+    ],
+    "description": "Create ReactJS Functional Component Typescript"
+  },
+  "RN Functional Component File Name": {
+    "prefix": "rnfc-file",
+    "body": [
+      "import React from 'react';",
+      "import { View } from 'react-native';",
+      "",
+      "// import * as S from './styles';",
+      "",
+      "interface $1Props {",
+      "\t$2",
+      "}",
+      "",
+      "export function ${TM_FILENAME_BASE/^(.*)\\..*/$1/}() {",
+      "  return (",
+      "    $3<View />",
+      "  );",
+      "}"
+    ],
+    "description": "Create React Native Functional Component"
+  },
+  "React Functional Component Dir Name": {
+    "prefix": "rfc-dir",
+    "body": [
+      "interface $1Props {",
+      "\t$2",
+      "}",
+      "",
+      "export function ${TM_DIRECTORY/^.*(\\/|\\\\)([^(\\/|\\\\)]+)$/$2/}() {",
+      "  return (",
+      "    $3<div />",
+      "  );",
+      "};"
+    ],
+    "description": "Create ReactJS Functional Component Typescript"
+  },
+  "RN Functional Component Dir Name": {
+    "prefix": "rnfc-dir",
+    "body": [
+      "import React from 'react';",
+      "import { View } from 'react-native';",
+      "",
+      "// import * as S from './styles';",
+      "",
+      "interface $1Props {",
+      "\t$2",
+      "}",
+      "",
+      "export function ${TM_DIRECTORY/^.*(\\/|\\\\)([^(\\/|\\\\)]+)$/$2/}() {",
+      "  return (",
+      "    $3<View />",
+      "  );",
+      "}"
+    ],
+    "description": "Create React Native Functional Component"
+  },
+}
